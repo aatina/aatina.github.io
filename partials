@@ -1,0 +1,38 @@
+<!-- Footer -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+
+      <div class="footer-link col-sm-4 row">
+        <div class="call-icon col-sm-6"><i class="icon fas fa-phone"></i></div>
+        <div class="footer-text">
+          <p>Call</p>
+          <span>+447380850666</span>
+        </div>
+      </div>
+
+      <div class="footer-link col-sm-4 row">
+        <div class="email-icon col-sm-6"><i class="icon far fa-envelope"></i></div>
+        <div class="footer-text">
+          <p>Email</p>
+          <a href="mailto:aatina@hotmail.co.uk" target="_top">aatina@hotmail.co.uk</a>
+        </div>
+      </div>
+
+      <div class="footer-link col-sm-4 row">
+        <div class="follow-icon col-sm-6"><i class="icon fas fa-plus"></i></div>
+        <div class="footer-text">
+          <p>Follow me</p>
+          <a href="https://www.linkedin.com/in/aatina-punjabi-70408710a/">
+            <i class="li-icon fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/aatina">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>

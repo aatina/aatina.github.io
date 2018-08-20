@@ -1,10 +1,11 @@
 //VARIABLES
 
-@color_1: #ff6542;
-@color_2: #779fa1;
-@color_3: #88498f;
+@color_1: #e94f37;
+@color_2: #3f88c5;
+@color_3: #44bba4;
 
-@bg-color: #e0cba8;
+@bg-color: #f6f7eb;
+@font-color: #393e41;
 
 // @color_1: #E83556; //pink
 // @color_2: #61D0D4; //blue
@@ -19,6 +20,10 @@ body{
 
 *{
   font-family: Palatino;
+}
+
+h1, h2, p{
+  color: @font-color;
 }
 
 .navbar{
@@ -38,8 +43,20 @@ body{
   }
 }
 
+html{
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+body{
+   min-height:100%;
+   position:relative;
+}
+
 .main-body{
   margin-top: 40px;
+  padding-bottom: 100px;
   .icon{
     img{
       float: right;
@@ -73,7 +90,9 @@ body{
         color: white;
         font-weight: bold;
         transition: 0.3s;
-        span{
+        a{
+          text-decoration: none;
+          color: white;
           display: table-cell;
           vertical-align: middle;
         }
@@ -90,11 +109,17 @@ footer{
   margin-top: 50px;
   background-color: @color_1;
   color: white;
-  position:fixed;
-  bottom:0;
-  left:0;
-  right:0;
+  // position:fixed;
+  // bottom:0;
+  // left:0;
+  // right:0;
   padding: 20px;
+
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:100px;   /* Height of the footer */
+
   .footer-text{
     margin-left: 10px;
     span{
@@ -105,6 +130,7 @@ footer{
     }
     p{
       margin-bottom: 5px;
+      color: white;
     }
     a{
       text-decoration: none;
@@ -120,7 +146,24 @@ footer{
     padding-top: 10px;
     font-size: 30px;
   }
-  .li-icon{
+  .contact-icon{
+    padding-right: 5px;
     font-size: 30px;
+  }
+}
+
+// PROJECTS
+.project{
+  margin: 20px;
+  border: 1px @color_2 solid;
+  border-radius: 10px;
+  padding: 10px;
+  .project-pic{
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+  }
+  .project-text{
+    text-align: right;
   }
 }
