@@ -23,6 +23,13 @@ body{
   font-family: Palatino;
 }
 
+a{
+  color: @color_3;
+}
+a:hover{
+  color: @color_3;
+}
+
 h1, h2, h4, h6, p{
   color: @font-color;
 }
@@ -119,7 +126,7 @@ body{
     height: 250px;
   }
   .project-text{
-    text-align: right;
+    //text-align: right;
   }
 }
 
@@ -129,9 +136,9 @@ body{
     padding: 20px;
     .circle{
       display: table;
-      margin: 0px 10px 20px;
       float: left;
       width: 150px;
+      max-width: 150px;
       height: 150px;
       border-radius: 50%;
       text-align: center;
