@@ -6,6 +6,7 @@
 
 @bg-color: #f6f7eb;
 @font-color: #393e41;
+@border: #9A9DA0;
 
 // @color_1: #E83556; //pink
 // @color_2: #61D0D4; //blue
@@ -22,9 +23,14 @@ body{
   font-family: Palatino;
 }
 
-h1, h2, p{
+h1, h2, h4, h6, p{
   color: @font-color;
 }
+
+h6{
+  font-weight: bold;
+}
+
 
 .navbar{
   margin-top: 30px;
@@ -104,15 +110,91 @@ body{
   }
 }
 
+
+// PROJECTS
+.project{
+  .project-pic{
+    display: block;
+    margin: 10px auto;
+    height: 250px;
+  }
+  .project-text{
+    text-align: right;
+  }
+}
+
+//RESUME
+.left-col{
+  .cv-section{
+    padding: 20px;
+    .circle{
+      display: table;
+      margin: 0px 10px 20px;
+      float: left;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+      background-color: @color_3;
+      span{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .circle:hover{
+      box-shadow: inset 0 0 150px 150px rgba(0, 0, 0, 0.2);
+    }
+    .top-section{
+      padding-top: 30px;
+      border-bottom: solid 1px @border;
+    }
+    .final-section{
+      padding-bottom: 20px;
+      border-bottom: solid 1px @border;
+    }
+  }
+}
+
+.right-col{
+  .right-section{
+    h4, h5{
+      text-align: center;
+    }
+    .circle{
+      display: table;
+      margin: 5px auto;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+      background-color: @color_2;
+      i{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .circle:hover{
+      box-shadow: inset 0 0 150px 150px rgba(0, 0, 0, 0.2);
+    }
+    ul{
+      list-style: none;
+    }
+  }
+}
+
+
+
 //FOOTER
 footer{
   margin-top: 50px;
   background-color: @color_1;
   color: white;
-  // position:fixed;
-  // bottom:0;
-  // left:0;
-  // right:0;
   padding: 20px;
 
   position:absolute;
@@ -149,19 +231,5 @@ footer{
   .contact-icon{
     padding-right: 5px;
     font-size: 30px;
-  }
-}
-
-// PROJECTS
-.project{
-  margin: 20px;
-  padding: 10px;
-  .project-pic{
-    display: block;
-    margin: 0 auto;
-    height: 250px;
-  }
-  .project-text{
-    text-align: right;
   }
 }
